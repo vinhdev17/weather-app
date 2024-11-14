@@ -1,13 +1,44 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --light: #fcfcfc;
+  --dark: #f5f5f5;
+  --red: #cb0e4e;
+  --dark-red: #a00c3d;
+  --text-primary: #707070;
+  --text-heading: #4e4e4e;
+  --text-input: #464444;
+  --text-footer: #a1a1a1;
+  --border: #dbd6d6de;
+  --border-secondary: #e2e2e2;
+  --border-accordion: #e4e4e4;
+  --border-check: #bce0fd;
+  --border-account: #d9d9d9;
+  --cart-bg: #ecebeb;
+  --footer-bg: #f8f8f8;
+  --comment-bg: #fafafa;
+  --primary-bg: #2699fb;
+  --secondary-bg: #dbd6d6;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  margin: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
 }

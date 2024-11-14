@@ -1,0 +1,7 @@
+.weather {
+  width: 30%;
+  min-height: 30px;
+  border: 1px solid black;
+  padding: 5px 3px;
+  margin-bottom: 15px;
+}

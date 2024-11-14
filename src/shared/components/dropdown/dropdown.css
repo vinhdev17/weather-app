@@ -1,0 +1,64 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown__wrapper-content {
+  position: absolute;
+  left: 20%;
+  display: none;
+  transform: translate(-50%);
+  width: auto;
+  min-width: 100px;
+  z-index: 100;
+}
+
+.dropdown__label {
+  background: transparent;
+  border: none;
+}
+
+.dropdown__content {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--white);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s linear;
+}
+
+/* Styles for dropdown with arrow */
+.dropdown_with-arrow .dropdown__content::before {
+  content: "";
+  position: absolute;
+  right: 45%;
+  top: -8px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  border: 1px solid var(--border);
+  border-right: none;
+  border-bottom: none;
+  background: var(--white);
+}
+
+.dropdown_with-arrow .dropdown__wrapper-content {
+  padding-top: 20px;
+}
+
+/* Hover effect for opening state */
+.dropdown_opening-state_hover
+  .dropdown__label:hover
+  ~ .dropdown__wrapper-content,
+.dropdown__wrapper-content:hover {
+  display: block;
+}
+
+/* Styles for open state */
+.dropdown_open .dropdown__wrapper-content {
+  display: block;
+}
+
+/* Styles for close state */
+.dropdown_close .dropdown__wrapper-content {
+  display: none;
+}
